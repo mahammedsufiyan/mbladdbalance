@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_FeKDMGppEe2ZMvRyGbX7SQ" targetNamespace="http://tns.tibco.com/bw/composite/mbladdbalance.module" name="mbladdbalance.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_OZ0rwGprEe2ZMvRyGbX7SQ" name="mbladdbalance" promote="Componentmbladdbalance/mbladdbalance">
+    <sca:interface.wsdl xmi:id="_OZ49MGprEe2ZMvRyGbX7SQ" interface="http://xmlns.example.com/20221122211027PLT#wsdl.interface(mbladdbalance)" scaext:wsdlLocation="../Processes/mbladdbalance/module/mbladdbalance.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_OaEjYGprEe2ZMvRyGbX7SQ" name="RestService" path="/mbladdbalance" docBasePath="http://localhost:7777/mbladdbalance.module" docResourcePath="mbladdbalance" basePath="/" connector="mbladdbalance.module.mbladdbalance" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/mbladdbalance.module.mbladdbalance-mbladdbalance.json">
+      <operation xmi:id="_OaMfMGprEe2ZMvRyGbX7SQ" operationName="post" nickname="post-mbladdbalance" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_OaXeUGprEe2ZMvRyGbX7SQ"/>
+      <advancedConfig xmi:id="_OaEjYWprEe2ZMvRyGbX7SQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_OaMfMWprEe2ZMvRyGbX7SQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_FnC5cGppEe2ZMvRyGbX7SQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnHK4GppEe2ZMvRyGbX7SQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnIZAGppEe2ZMvRyGbX7SQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnJnIGppEe2ZMvRyGbX7SQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnK1QGppEe2ZMvRyGbX7SQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnMqcGppEe2ZMvRyGbX7SQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnOfoGppEe2ZMvRyGbX7SQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnPtwGppEe2ZMvRyGbX7SQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_FnRi8GppEe2ZMvRyGbX7SQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_G39HsGppEe2ZMvRyGbX7SQ" name="/API/PORT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_G8xWQGppEe2ZMvRyGbX7SQ" name="/TIBCODB/TIBCO_CONN_STRING" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4NcloGppEe2ZMvRyGbX7SQ" name="/TIBCODB/USER" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4SxxkGppEe2ZMvRyGbX7SQ" name="/TIBCODB/PASSWORD" type="property:password" scaext:simpleValue="#!6eyYNm3pNSiuwb6Kev4eaw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4XzbgGppEe2ZMvRyGbX7SQ" name="/TIBCODB/LOGIN_TIMEOUT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4c1FcGppEe2ZMvRyGbX7SQ" name="/TIBCODB/MAX_CONN" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4iVQgGppEe2ZMvRyGbX7SQ" name="/TIBCODB/MAX_ROWS" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HB01YGppEe2ZMvRyGbX7SQ" name="/UNNEOC/SERVER" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3HKTAGppEe2ZMvRyGbX7SQ" name="/UNNEOC/PORT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3K2gMGppEe2ZMvRyGbX7SQ" name="/UNNEOC/USER" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3orrsGppEe2ZMvRyGbX7SQ" name="/UNNEOC/PASS" type="property:password" scaext:simpleValue="#!WInaGiylOg6+TRvfmefHWg==" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_OZvzQGprEe2ZMvRyGbX7SQ" name="Componentmbladdbalance" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OZvzQWprEe2ZMvRyGbX7SQ" processName="mbladdbalance.module.mbladdbalance"/>
+    <sca:service xmi:id="_OZy2kGprEe2ZMvRyGbX7SQ" name="mbladdbalance">
+      <sca:interface.wsdl xmi:id="_OZzdoGprEe2ZMvRyGbX7SQ" interface="http://xmlns.example.com/20221122211027PLT#wsdl.interface(mbladdbalance)" scaext:wsdlLocation="../Processes/mbladdbalance/module/mbladdbalance.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

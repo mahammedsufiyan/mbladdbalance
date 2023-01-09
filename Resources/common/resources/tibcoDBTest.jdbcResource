@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_MmnggRhgEe2dvr0w59484w" name="common.resources.tibcoDBTest" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_MnRAwBhgEe2dvr0w59484w" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_MnRAwRhgEe2dvr0w59484w">
+    <substitutionBindings xmi:id="_4MLpwD_JEe2Dy9iztEglYA" template="username" propName="/TIBCODB/USER"/>
+    <substitutionBindings xmi:id="_4-1OsD_JEe2Dy9iztEglYA" template="password" propName="/TIBCODB/PASSWORD"/>
+    <substitutionBindings xmi:id="_uYurUD_MEe2Dy9iztEglYA" template="maxConnections" propName="/TIBCODB/MAX_CONN"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_MnRn0BhgEe2dvr0w59484w" jdbcDriver="tibcosoftwareinc.jdbc.postgresql.PostgreSQLDriver" connectionIdleTimeout="60">
+      <substitutionBindings xmi:id="_sBICID_JEe2Dy9iztEglYA" template="dbURL" propName="/TIBCODB/TIBCO_CONN_STRING"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

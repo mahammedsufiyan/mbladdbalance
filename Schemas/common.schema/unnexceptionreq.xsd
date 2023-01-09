@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://imagine/tns/unnexceptionreq" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://imagine/tns/unnexceptionreq">
+  <xsd:element name="Element">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" name="msg" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="seqno" type="xsd:integer"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="faultname" type="xsd:string"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="faultdtls" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

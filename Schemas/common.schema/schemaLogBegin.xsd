@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://xmlns.img.tibco.com/shared/schema/schemaLogBegin" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xmlns.img.tibco.com/shared/schema/schemaLogBegin">
+  <xsd:element name="logStart">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="0" name="msgid" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="uuid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="sourcesign" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="sourceip" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="targetsys" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="appspacenode" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="interfacename" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="version" type="xsd:string"/>
+
+                <xsd:element minOccurs="0" name="subid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="msisdn" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="imsi" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="params" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="actioncode" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="starttime" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="salescoordergroup" type="xsd:string"/>
+                <xsd:element name="workorderno" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="currentseqno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="currentstepno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="currentlegno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="keyval1" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="keyval2" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="keyval3" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

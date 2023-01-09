@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://xmlns.img.tibco.com/shared/schema/schemaStdOut" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xmlns.img.tibco.com/shared/schema/schemaStdOut">
+  <xsd:element name="stdOut">
+    <xsd:complexType>
+      <xsd:sequence>
+                <xsd:element maxOccurs="1" minOccurs="0" name="code" type="xsd:integer"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="message" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="payload" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="endstep" type="xsd:integer"/>
+                <xsd:element name="seqno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="remark" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="request" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="orderid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="subid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="msisdn" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="imsi" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="keyval1" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="keyval2" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="keyval3" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="response" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="requestdate" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="responsedate" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="faultname" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="faultdtls" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

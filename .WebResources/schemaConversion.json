@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/mbladdbalance.module/Service Descriptors/mbladdbalance.module.mbladdbalance-mbladdbalance.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://imagine/tns/mbladdbalancereq"
+    },
+    {
+        "jsonSchemaLocation": "/mbladdbalance.module/Service Descriptors/mbladdbalance.module.mbladdbalance-mbladdbalance.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://imagine.com/namespaces/tns/StdRspV2"
+    }
+]}

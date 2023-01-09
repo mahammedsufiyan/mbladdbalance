@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.example.com/namespaces/tns/subIDSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.example.com/namespaces/tns/subIDSchema">
+  <xsd:element name="Element">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" name="subid" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="msisdn" type="xsd:integer"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="imsi" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="active" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

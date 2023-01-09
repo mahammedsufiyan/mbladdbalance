@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://imagine/tns/numprovrequest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://imagine/tns/numprovrequest">
+  <xsd:element name="Element">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" name="requester" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="subscriptionid" type="xsd:string"/>
+                <xsd:element minOccurs="1" name="workorderno" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="currentseqno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="currentstepno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="currentlegno" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="options" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="msisdn" type="xsd:string"/>
+                <xsd:element minOccurs="1" name="imsi" type="xsd:string"/>
+                <xsd:element minOccurs="1" name="kivalue" type="xsd:string"/>
+                <xsd:element minOccurs="1" name="iccid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="planid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="newsubscriptionid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="reason" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
